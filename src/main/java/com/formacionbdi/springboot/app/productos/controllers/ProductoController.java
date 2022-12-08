@@ -20,7 +20,7 @@ public class ProductoController {
 	public List<Producto> listar(){
 		return productoService.findAll();
 	}
-	@RequestMapping(value="/listar/{id}", method = RequestMethod.GET)
+	@RequestMapping(value="/ver/{id}", method = RequestMethod.GET)
 	public Producto detalle(@PathVariable Long id){
 		return productoService.findById(id);
 	}
